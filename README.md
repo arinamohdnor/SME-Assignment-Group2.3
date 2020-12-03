@@ -1,6 +1,6 @@
 # SME-Assignment-Group2.3
 
-Installation tutorial.
+Installation tutorial:
 
 1. Make sure npm and node.js is installed in your device.
 2. Clone this git.
