@@ -1,0 +1,29 @@
+<ion-content class="background">
+  <h1 class="ion-text-center">Contact Us</h1>
+<div class="ion-padding">
+
+
+  <ion-grid>
+    <ion-row class="ion-text-center">
+      <ion-col>
+      <ion-label>Enter your concern:</ion-label>
+    </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-textarea auto-grow='true' [(ngModel)]="report" required></ion-textarea>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+  
+<ion-row>
+    <ion-col>
+      <ion-button expand="block" fill="outline" color="dark" class="font" (click)="sendReport()">Send</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</div>
+</ion-content>

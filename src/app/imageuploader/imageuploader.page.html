@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Want to be Driver?</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class='background'>
+    <br>
+    <br>
+    <br>
+    <br>
+
+  <p class="ion-text-center">To be driver, you need to upload your license image to be verified by admin</p>
+
+
+
+    <div class="ion-text-center">
+        <ion-card *ngIf="imageData else elseBlock">
+          <img src="{{imageData}}" alt="">
+        </ion-card>
+    
+      
+          <ion-button (click)="addImage()" fill="outline" color="dark">
+            <ion-icon slot="start" name="camera"></ion-icon>
+            Add photo
+          </ion-button>
+          <ion-button fill="outline" color="dark" (click)="save()">
+              Upload
+            </ion-button>
+      </div>
+
+      
+
+</ion-content>

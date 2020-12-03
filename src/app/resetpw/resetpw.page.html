@@ -1,0 +1,31 @@
+
+  <ion-content class="background">
+      <h1 class="ion-text-center">Reset Password</h1>
+    <div class="ion-padding">
+  
+  
+      <ion-grid>
+        <ion-row class="ion-text-center">
+          <ion-col>
+          <ion-label>Enter your e-mail address:</ion-label>
+        </ion-col>
+        </ion-row>
+  
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-input [(ngModel)]="username" required></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+  
+      
+    <ion-row>
+        <ion-col>
+          <ion-button expand="block" fill="outline" color="dark" class="font" (click)="forgotPassword()">Send
+            Password Reset</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    </div>
+    </ion-content>

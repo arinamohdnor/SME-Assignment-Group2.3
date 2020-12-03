@@ -1,0 +1,33 @@
+.filebtn {
+	opacity: 0;
+	position: absolute;
+	top: -100em;
+	left: -100em;
+}
+
+.profile-pic {
+	width: 200px;
+	height: 200px;
+}
+
+.feed-card img {
+    max-height: 35vh;
+    overflow: hidden;
+    
+  }
+  
+ion-content.background{
+    --background: url(../../assets/wallpaper.jpg) 0 0/100% 100% no-repeat;
+}
+
+.feed-card {
+  background-color: #ffffff; 
+}
+
+agm-map {
+  height: 300px;
+}
+
+.profile-info{
+  background-color: var(--background);
+}

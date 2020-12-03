@@ -1,0 +1,26 @@
+ion-img {
+	height: 30vh;
+  width: auto;
+  margin: auto;
+  display: block;
+}
+
+ion-card{
+	outline: 1px black;
+	background-color: blanchedalmond;
+	width: auto;
+	height: 49hv;
+}
+
+ion-content.background{
+    --background: url(../../assets/wallpaper.jpg) 0 0/100% 100% no-repeat;
+}
+
+a{
+    outline: 1px black;
+	font-family: sans-serif;
+	size: 25vh;
+	padding: 5hv,5hv,5hv,5hv;
+	color: black;
+}
+
