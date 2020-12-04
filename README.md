@@ -8,5 +8,5 @@ Installation tutorial:
 3. Open terminal and direct to project directory.
 4. Run 'npm install -g @ionic/cli' to install ionic commands. (if u haven't installed it) 
 5. Run 'npm install --save' to install dependencies.
-6. if counter any error, Run 'npm install firebase @angular/fire --save'
+6. If counter any error, run 'npm install firebase @angular/fire --save'
 7. Run 'ionic serve' and head to localhost.
