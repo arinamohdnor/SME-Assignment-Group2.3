@@ -31,8 +31,7 @@ export class MytripPage implements OnInit {
     public user:UserService,
     public firebase: FirebaseApp,
     ) { 
-      // this.rideofferCollection = afStore.collection("users/"+this.user.getUID()+"/myOffer");
-      // console.log(this.rideofferCollection.);
+      this.rideofferCollection = afStore.collection("users/"+this.user.getUID()+"/myOffer")
       this.rideoffers = this.afStore.collection('rideoffers').snapshotChanges().pipe(
         map(actions => {
           return actions.map(a => {

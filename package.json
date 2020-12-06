@@ -9,9 +9,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "publish-please": "publish-please",
-    "prepublishOnly": "publish-please guard"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -36,7 +34,6 @@
     "@ionic/storage": "^2.2.0",
     "angularfire2": "^5.2.3",
     "cordova-android": "8.1.0",
-    "cordova-ios": "6.1.1",
     "cordova-plugin-camera": "^4.1.0",
     "cordova-plugin-crop": "^0.4.0",
     "cordova-plugin-geolocation": "^4.0.2",
@@ -44,7 +41,6 @@
     "cordova-sqlite-storage": "^4.0.0",
     "core-js": "^3.4.7",
     "firebase": "^7.5.2",
-    "firebase-tools": "^8.17.0",
     "ionic-angular": "^3.9.9",
     "moment": "^2.24.0",
     "ng-datefns-pipes": "^1.0.3",
@@ -109,8 +105,7 @@
       "cordova-sqlite-storage": {}
     },
     "platforms": [
-      "android",
-      "ios"
+      "android"
     ]
   }
 }
