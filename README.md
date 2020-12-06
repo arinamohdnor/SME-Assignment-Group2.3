@@ -1,3 +1,7 @@
+
+![Main](https://github.com/arinamohdnor/SME-Assignment-Group2.3/workflows/Main%20Branch/badge.svg)
+![Pull Requests](https://github.com/arinamohdnor/SME-Assignment-Group2.3/workflows/Pull%20Requests/badge.svg)
+
 # SME-Assignment-Group2.3
 
 Installation tutorial:
