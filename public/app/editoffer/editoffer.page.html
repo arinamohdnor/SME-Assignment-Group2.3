@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>editoffer</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <ion-card>
+  
+    <ion-item>
+    <ion-label position="floating">Pick-up</ion-label>
+    <ion-input type="text" [(ngModel)]="pickup"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+    <ion-label position="floating">Destination</ion-label>
+    <ion-input type="text" [(ngModel)]="destination"></ion-input>
+    </ion-item>
+
+    <ion-item>
+    <ion-label position="floating">Date</ion-label>
+    <ion-datetime display-format="DD MMM YY" min="2019" max="2022" value="2019-11-14"[(ngModel)]="date" ></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+    <ion-label position="floating">Time</ion-label>
+    <ion-datetime display-format="hh:mm A" [(ngModel)]="time"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+    <ion-label position="floating">No. of Passenger</ion-label>
+    <ion-input type="number" [(ngModel)]="passenger" min="1" max="10"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label position="floating">Fee</ion-label>
+        <ion-input type="text" [(ngModel)]="fee"></ion-input>
+    </ion-item>
+  
+  </ion-card>
+
+  <ion-button fill="solid" expand="block" color="dark" (click)="updateMyOffer()">Save</ion-button>
+    
+
+</ion-content>

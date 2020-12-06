@@ -1,0 +1,42 @@
+<ion-content class='background'>
+		<h1 class= "ion-text-center">UM Carpool</h1>
+		<h2 class= "ion-text-center">Profile</h2>
+		<ion-grid>
+			<ion-row>
+				<ion-col>
+					<ion-img class="vertical-align-content" src='./assets/dp.png'>
+					</ion-img>
+					
+			</ion-col>
+		</ion-row>
+		<ion-row><ion-col class="ion-text-center">
+				<a>Hi! Have a good day: </a>
+		<ion-card class="ion-text-center">
+			<a> {{ name }}</a>
+		</ion-card>
+	</ion-col></ion-row>
+		
+			<ion-row>
+				<ion-col class='ion-text-center'>
+				<a (click)='gotoeditprofile()'>Change Password</a>
+			</ion-col>
+		</ion-row>
+			<ion-row>
+				<ion-col class='ion-text-center'>
+				<a (click)='driverRequest()'>Request to be driver</a>
+			</ion-col>
+		</ion-row>
+			<ion-row>
+				<ion-col class='ion-text-center'>
+				<a  *ngIf="afAuth.auth.currentUser" (click)="signOut()">Sign Out</a>
+			</ion-col>
+		</ion-row>
+	
+		<ion-row>
+			<ion-col class='ion-text-center'>
+				<a (click)="gotoreport()">Contact Us</a>
+			</ion-col>
+		</ion-row>	
+</ion-grid>
+
+</ion-content>

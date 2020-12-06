@@ -1,0 +1,38 @@
+<ion-content class="background">
+		<h1 class= "ion-text-center">UM Carpool</h1>
+		<h2 class= "ion-text-center">Login</h2>
+	<ion-grid>
+		<ion-row>
+			<ion-col>
+				<ion-item>
+				<ion-label position="floating">Username</ion-label>
+				<ion-input type="text" [(ngModel)]="name"></ion-input>
+				</ion-item>
+			</ion-col>
+		</ion-row>
+				
+		<ion-row>
+			<ion-col>
+				<ion-item>
+				<ion-label position="floating">Password</ion-label>
+				<ion-input type="password" [(ngModel)]="password"></ion-input>
+				</ion-item>
+			</ion-col>
+		</ion-row>
+		
+		<div class="right"> <ion-text (click)="forgotPassword()" color="white"><u>Forgot Password?</u></ion-text></div>
+	  
+		<ion-row>
+			<ion-col>
+	  			<ion-button fill="outline" expand="block" color="dark" (click)="login()">Login</ion-button>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col>
+				<p> No account yet? 
+				<a (click)="goToRegister()">Register here</a>
+				</p>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+</ion-content>
