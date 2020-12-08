@@ -24,7 +24,7 @@
 3. Install cordova via ```npm install -g cordova```.
 4. Direct to project directory.
 5. Run ```ionic cordova emulate android```.
-6. You'll most likely encounter one of these error, and here are the solutions:
+6. You'll most likely encounter one of these error(s), and here are the solutions:
 
 - [Something about JAVA_HOME not being set, or you have JDK 15 instead of JDK 8 (install JDK 8 if you haven't)](https://stackoverflow.com/a/63152392)
 - [Gradle not installed, or missing path](https://stackoverflow.com/a/43692039)
