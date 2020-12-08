@@ -30,7 +30,7 @@
 - [Gradle not installed, or missing path](https://stackoverflow.com/a/43692039)
 - [Android SDK licenses issue](https://stackoverflow.com/a/57554165)
 
-7. Repeat step 5-6 until an error regarding come up 'no emulators available'. This means all the necessary build errors are out of the way. *(you can also use ```cordova build``` for faster build).
+7. Repeat step 5-6 until an error regarding come up 'no emulators available'. This means all the necessary build errors are out of the way. *(you can also use ```cordova build``` for faster build)*.
 8. Open Android Studio, run the emulator (create new empty project if needed).
 9. Run ```ionic cordova emulate android``` for the last time.
 10. You're done and the application should be on the emulator!
