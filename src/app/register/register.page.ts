@@ -100,6 +100,7 @@ export class RegisterPage implements OnInit {
 			  uid: userCredential.user.uid,
 			  name: name1[0],
 			  isDriver: false,
+			  isAdmin: false,
 			  isRequestDriver: false,
 			  blocked: false,
 			  phoneno: '6' + this.phoneno

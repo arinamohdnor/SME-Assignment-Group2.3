@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Users</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/admin"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content class="background">
+  <ion-list>
+    <ion-list-header>
+      Admins
+    </ion-list-header>
+
+    <ion-item *ngFor="let admin of admins | async">
+      <ion-avatar slot="start">
+        <img src="./assets/dp.png">
+      </ion-avatar>
+      <ion-label>
+        <h2>{{admin.name}}</h2>
+      </ion-label>
+    </ion-item>
+
+    <ion-list-header>
+      Drivers
+    </ion-list-header>
+
+    <ion-item *ngFor="let driver of drivers | async">
+      <ion-avatar slot="start">
+        <img src="./assets/dp.png">
+      </ion-avatar>
+      <ion-label>
+        <h2>{{driver.name}}</h2>
+      </ion-label>
+    </ion-item>
+
+    <ion-list-header>
+      Passengers
+    </ion-list-header>
+
+    <ion-item *ngFor="let user of users | async">
+      <ion-avatar slot="start">
+        <img src="./assets/dp.png">
+      </ion-avatar>
+      <ion-label>
+        <h2>{{user.name}}</h2>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

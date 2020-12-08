@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Pending Drivers</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/admin"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content class="background">
+  <ion-list>
+    <ion-list-header>
+      Pending Drivers
+    </ion-list-header>
+
+    <ion-item *ngFor="let driver of drivers | async">
+      <ion-avatar slot="start">
+        <img src="./assets/dp.png">
+      </ion-avatar>
+      <ion-label>
+        <h2>{{driver.name}}</h2>
+      </ion-label>
+    </ion-item>
+
+  </ion-list>
+</ion-content>

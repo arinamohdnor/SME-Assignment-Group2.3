@@ -14,6 +14,8 @@ export class TabsPage implements OnInit {
 	hasVerifiedEmail = true
 
 	isDriver: boolean
+	isAdmin: boolean
+
 	constructor(public afAuth: AngularFireAuth,) {
 		firebase.auth().onAuthStateChanged(user =>{
 			if(user){
@@ -23,6 +25,7 @@ export class TabsPage implements OnInit {
 			.get()
 			.then(usersSnapshot => {
 			  this.isDriver = usersSnapshot.data().isDriver;
+			  this.isAdmin = usersSnapshot.data().isAdmin;
 			});
 		  }
 		});

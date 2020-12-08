@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Reports</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/admin"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content class="background">
+
+  <ion-card  *ngFor="let report of reports | async" style="background-color:white">
+
+    <!-- <ion-card-header>
+      <ion-card-subtitle>{{report.name}}</ion-card-subtitle>
+    </ion-card-header> -->
+    <ion-card-content>
+      {{report.report}}
+      <br><br>
+      <i>by {{report.name}}</i>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

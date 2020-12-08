@@ -6,6 +6,7 @@ export interface User {
     name: string;
     isDriver: boolean;
     isRequestDriver: boolean;
+    isAdmin: boolean;
     blocked: boolean;
     phoneno: string
     

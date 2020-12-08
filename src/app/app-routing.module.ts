@@ -30,6 +30,19 @@ const routes: Routes = [
   },
 
   { path: 'edit-profile', loadChildren: './edit-profile/edit-profile.module#EditProfilePageModule' },
+  // {
+  //   path: 'view-users',
+  //   loadChildren: () => import('./view-users/view-users.module').then( m => m.ViewUsersPageModule)
+  // },
+  // {
+  //   path: 'view-pending-drivers',
+  //   loadChildren: () => import('./view-pending-drivers/view-pending-drivers.module').then( m => m.ViewPendingDriversPageModule)
+  // },
+  // {
+  //   path: 'report-list',
+  //   loadChildren: () => import('./report-list/report-list.module').then( m => m.ReportListPageModule)
+  // },
+
   
   
 ];
