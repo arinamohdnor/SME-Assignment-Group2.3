@@ -19,7 +19,7 @@
 
 *Steps may vary depending on user*
 
-1. Download and install Android Studio (https://developer.android.com/studio).
+1. [Download and install Android Studio](https://developer.android.com/studio).
 2. Open terminal.
 3. Install cordova via ```npm install -g cordova```.
 4. Direct to project directory.
