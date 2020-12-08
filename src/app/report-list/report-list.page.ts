@@ -14,7 +14,7 @@ import { map } from 'rxjs/operators';
 })
 export class ReportListPage implements OnInit {
 
-  admins: Observable<any>;
+  reports: Observable<any>;
 
   constructor(
     private afstore: AngularFirestore,
